@@ -10,13 +10,13 @@
         $save_update="save";
         $action="none";
     }
-        try{
-            $conn = new PDO("mysql:host=127.0.0.1; dbname=mydb", "root", null);
-            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        }catch (PDOException $e){
-            echo $e->getMessage();
-        exit("Keine DB Verbindung!");
-        }
+    try{
+        $conn = new PDO("mysql:host=127.0.0.1; dbname=mydb", "root", null);
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    }catch (PDOException $e){
+        echo $e->getMessage();
+    exit("Keine DB Verbindung!");
+    }
     //echo "Verbindung steht!";
     reset_vars();
     if(isset($_POST['button'])) {

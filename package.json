@@ -1,12 +1,12 @@
 {
-  "name": "crud_14_2",
+  "name": "crud_part_01",
   "version": "1.0.0",
   "description": "",
-  "main": "INDEX:PHP",
+  "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "tORSTEN",
+  "author": "Torsten",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.0.0-beta3",

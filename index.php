@@ -9,8 +9,6 @@
         $info = "";
         $save_update="save";
         $action="none";
-        
-
     }
         try{
             $conn = new PDO("mysql:host=127.0.0.1; dbname=mydb", "root", null);
@@ -34,7 +32,6 @@
                 $stmt->execute(['first_name' => $_POST['first_name'], 'last_name' => $_POST['last_name']]);   
                 if($stmt->rowCount()>0) $info=$stmt->rowCount()." Datensatz wurde gespeichert!";
                 else $info="Kein Datenzatz gespeichert!";
-                
                 break;
             case 'edit':
                 $save_update="update";
